@@ -23,13 +23,14 @@
     <version>38</version>
   </parent>
 
+  <groupId>com.xovis</groupId>
   <artifactId>vertx-http-proxy</artifactId>
-  <version>4.1.1-SNAPSHOT</version>
+  <version>4.1.1-xovis.1</version>
 
   <name>Vert.x Http Proxy</name>
 
   <properties>
-    <stack.version>4.1.1-SNAPSHOT</stack.version>
+    <stack.version>4.1.0</stack.version>
     <fatjar.dir>${project.build.directory}</fatjar.dir>
     <doc.skip>false</doc.skip>
   </properties>
@@ -194,4 +195,15 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>xovis</id>
+      <url>https://nexus.xovis.com/nexus/repository/snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>xovis</id>
+      <url>https://nexus.xovis.com/nexus/repository/releases/</url>
+    </repository>
+  </distributionManagement>
 </project>
